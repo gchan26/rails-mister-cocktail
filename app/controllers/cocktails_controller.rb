@@ -1,5 +1,6 @@
 class CocktailsController < ApplicationController
-  before_action :cocktail_params, only: [:create]
+  before_action :find, only: [:show]
+
   def index
     @cocktails = Cocktail.all
   end

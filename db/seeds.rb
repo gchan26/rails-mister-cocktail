@@ -7,8 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'json'
 require 'open-uri'
+require 'faker'
 
-Ingredient.destroy_all if Rails.env.development?
+if Rails.env.development?
+  Ingredient.destroy_all
+  Cocktail.destroy_all
+end
 
 puts 'Creating ingredients...'
 
@@ -22,3 +26,14 @@ ingredient_list["drinks"].each do |ingredient|
 end
 
 puts 'Ingredients list done!'
+
+
+puts 'Creating good cocktails...'
+
+20.times do 
+  cocktail = Cocktail.create(
+    name: Faker::Space.constellation
+  )
+end
+
+puts 'Cocktails created!'

@@ -68,6 +68,8 @@ GEM
     diff-lcs (1.4.4)
     erubi (1.10.0)
     execjs (2.7.0)
+    faker (2.16.0)
+      i18n (>= 1.6, < 2)
     ffi (1.14.2)
     font-awesome-sass (5.12.0)
       sassc (>= 1.11)
@@ -90,10 +92,12 @@ GEM
     method_source (1.0.0)
     mimemagic (0.3.5)
     mini_mime (1.0.2)
+    mini_portile2 (2.5.0)
     minitest (5.14.3)
     msgpack (1.4.2)
     nio4r (2.5.5)
-    nokogiri (1.11.1-x86_64-linux)
+    nokogiri (1.11.1)
+      mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     pg (1.2.3)
     puma (4.3.7)
@@ -202,12 +206,13 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   autoprefixer-rails
   bootsnap (>= 1.4.2)
   byebug
+  faker
   font-awesome-sass (~> 5.12.0)
   jbuilder (~> 2.7)
   listen (~> 3.2)
@@ -229,4 +234,4 @@ RUBY VERSION
    ruby 2.6.6p146
 
 BUNDLED WITH
-   2.2.4
+   2.1.4
