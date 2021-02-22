@@ -18,6 +18,19 @@ h1 {
   font-weight: 800;
 }
 
+.title {
+  margin-left: 25px;
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  margin-left: 30px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
 .banner {
   background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(https://freight.cargo.site/t/original/i/81f2323225fbf49d97c08dbdae5c0fc0d274420fb01010c3269b7745969b9ddf/MOOD-RING-wallpaper-2x1-02.jpg);
   background-size: cover;
@@ -39,16 +52,18 @@ h1 {
   padding: 0px;
 }
 
+.btn.btn-secondary {
+  background-color: rgb(48, 109, 231);
+  margin-left: 45px;
+}
+
+.btn.btn-secondary:hover {
+  background-color: rgb(12, 82, 221);
+}
+
 body {
   background: -webkit-linear-gradient(to right, #ff00cc, #333399); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #ff00cc, #333399);
   color: #FFFFFF;
 }
 
-.btn.btn-secondary {
-  background-color: rgb(128, 164, 237)
-}
-
-.btn.btn-secondary:hover {
-  background-color: rgb(89, 135, 228)
-}
