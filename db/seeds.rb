@@ -32,7 +32,7 @@ puts 'Creating good cocktails...'
 
 20.times do 
   cocktail = Cocktail.create(
-    name: Faker::Space.constellation
+    name: Faker::Games::Zelda.item
   )
 end
 
