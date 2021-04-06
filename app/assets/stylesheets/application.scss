@@ -13,7 +13,42 @@
 @import "pages/index";
 
 // Breakpoints //
-// @media screen and (min-width: )
+@media screen and (min-width: 0) and (max-width:575px) {
+  h1.title {
+    margin-left: 25px;
+    font-size: 210%;
+    margin-bottom: 20px;
+  }
+  .header__menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+    align-content: flex-end;
+  }
+  .header__menu svg {
+    width: 32px;
+    fill: #E0E0E0;
+    align-content: flex-end;
+  }
+  .banner {
+    padding: 50% 0 !important;
+  }
+  h5.subtitle {
+    font-size: 100%;
+  }
+
+  .main-btn { 
+    margin-left: 0 !important;
+    min-width: 48px;
+  }
+  .main-btn-div {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+}
 
 
 

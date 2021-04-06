@@ -15,19 +15,25 @@
           <a class="nav-link mr-3" href="#">Menu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mr-3" href="#">Create</a>
+          <a class="nav-link mr-3" href="/cocktails/new">Create</a>
         </li>
       </ul>
     </div>
+    <a id="menu" class="header__menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+        </a>
   </nav>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+  
 </div>
 <div class="banner">
   <h1 class="title">Swim in your dreams</h1>
   <h5 class="subtitle">Let creativity drive you to create and share Cocktail ideas</h5>
-  <p><%= link_to "Create a Cocktail", new_cocktail_path, class: "main-btn btn btn-primary btn-lg mt-4" %></p>
+  <p class="main-btn-div"><%= link_to "Create a Cocktail", new_cocktail_path, class: "main-btn btn btn-primary btn-lg mt-4" %></p>
 </div>
 <body class="home-body">
   <div class="container">
