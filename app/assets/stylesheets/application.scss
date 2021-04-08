@@ -12,8 +12,8 @@
 @import "components/index";
 @import "pages/index";
 
-// Breakpoints //
-@media screen and (min-width: 0) and (max-width:575px) {
+// Breakpoints // Smaller Screens
+@media only screen and (min-width: 0) and (max-width: 600px) {
   h1.title {
     margin-left: 25px;
     font-size: 210%;
@@ -38,6 +38,10 @@
     font-size: 100%;
   }
 
+  .neon-drink-img {
+    display: none;
+  }
+
   .main-btn { 
     margin-left: 0 !important;
     min-width: 48px;
@@ -50,8 +54,24 @@
 
 }
 
+// Breakpoints // Medium-size Screens
+@media screen and (min-width: 601px) and (max-width:1200px) {
+  h1.title {
+    font-size: 270%;
+  }
 
+  h5.subtitle {
+    font-size: 160%;
+  }
 
+  .neon-drink-img {
+    display: none;
+  }
+
+  .main-btn {
+    padding: 1em !important;
+  }
+}
 
 
 
@@ -97,7 +117,7 @@ h1 {
 
 .title {
   margin-left: 25px;
-  font-size: 80px;
+  font-size: 4em;
   margin-bottom: 20px;
 }
 
@@ -106,6 +126,15 @@ h1 {
   margin-top: 25px;
   margin-bottom: 20px;
   font-size: 30px;
+}
+
+.neon-drink-img {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  height: 80%;
+  padding-bottom: 5%;
+  padding-left: 5%;
 }
 
 .banner {
@@ -147,8 +176,8 @@ h1 {
 // Home Page Body
 
 .home-body {
-  background: -webkit-linear-gradient(to right, #ff00cc, #333399); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ff00cc, #333399);
+  background: -webkit-linear-gradient(to right top, #6b2cf5, #d450e6); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right top, #6b2cf5, #d450e6);
   color: #FFFFFF;
 }
 // ------ //
@@ -166,6 +195,49 @@ h1 {
 .cocktail-name-label {
   color: white;
 }
+
+.create-title {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 50px;
+}
+
+.cocktail-name-card {
+  background: rgba( 178, 123, 178, 0.30 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7.0px );
+  -webkit-backdrop-filter: blur( 7.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.create-btn {
+  background-color: rgb(159, 52, 192);
+  color: white;
+  border-radius: 25px;
+  border: none;
+  padding: 0.8em;
+  -webkit-box-shadow: 0 8px 6px -6px #252525;
+	   -moz-box-shadow: 0 8px 6px -6px #252525;
+	        box-shadow: 0 8px 6px -6px #252525;
+  &:hover {
+    background-color: rgb(129, 40, 156);
+  }
+}
+
+.back-btn {
+  border-radius: 25px;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  margin-right: 1%;
+
+}
+
+// .buttons-new {
+//   text-align: right;
+// }
 
 .create-button {
   background-color: #ee3ef1;
