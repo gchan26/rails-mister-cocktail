@@ -5,6 +5,7 @@
       <%= simple_form_for(@cocktail) do |f| %>
         <div class="cocktail-name-label">
           <p><%= f.input :name, label: "Cocktail Name" %></p>
+          <%= f.input :photos,  as: :file,  input_html: { multiple: true },  label: "Select Photos" %>
         </div>
         <div class="buttons-new text-right">
           <%= link_to 'Back', cocktails_path(@cocktail), class: "back-btn btn btn-outline-primary" %>
