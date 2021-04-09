@@ -180,6 +180,15 @@ h1 {
   background: linear-gradient(to right top, #6b2cf5, #d450e6);
   color: #FFFFFF;
 }
+
+.cocktail-list-card {
+  background: rgba( 227, 212, 227, 0.20 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 7.0px );
+-webkit-backdrop-filter: blur( 7.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 // ------ //
 
 // --- New Cocktail Page === //
@@ -189,7 +198,7 @@ h1 {
   background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(https://external-preview.redd.it/HEvfZd4nw9klrp11A9CdJZEIsw3oTQTPHqLerR9m27w.jpg?auto=webp&s=e18968e50b4a696bb17fe9fe55dc3bc1ed799ee0);
   background-size: cover;
   background-position: center;
-  padding: 250px 0;
+  padding: 220px 0;
 }
 
 .cocktail-name-label {
@@ -234,10 +243,6 @@ h1 {
   margin-right: 1%;
 
 }
-
-// .buttons-new {
-//   text-align: right;
-// }
 
 .create-button {
   background-color: #ee3ef1;
