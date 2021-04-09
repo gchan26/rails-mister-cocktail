@@ -198,7 +198,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(https://external-preview.redd.it/HEvfZd4nw9klrp11A9CdJZEIsw3oTQTPHqLerR9m27w.jpg?auto=webp&s=e18968e50b4a696bb17fe9fe55dc3bc1ed799ee0);
   background-size: cover;
   background-position: center;
-  padding: 220px 0;
+  padding: 0px 0 280px 0;
 }
 
 .cocktail-name-label {
@@ -209,6 +209,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 50px;
+  margin-top: 10%;
 }
 
 .cocktail-name-card {
@@ -256,3 +257,6 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 margin-left: 235px;
 
 }
+
+// Show page
+
