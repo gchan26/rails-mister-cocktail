@@ -34,7 +34,7 @@
 <body class="show-body">
   <div class="container">
     <div class="glass-card-white mt-3 p-4">
-      <h1>Your drink: <strong><%= @cocktail.name %></strong></h1>
+      <h1 class="drink-name">Your drink: <strong><%= @cocktail.name %></strong></h1>
       <ul>
         <% @cocktail.doses.each do |dose| %>
           <li>
