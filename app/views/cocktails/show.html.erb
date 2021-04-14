@@ -32,9 +32,9 @@
 
 <%# Page body %>
 <body class="show-body">
-  <div class="container">
-    <div class="glass-card-white mt-3 p-4">
-      <h1 class="drink-name">Your drink: <strong><%= @cocktail.name %></strong></h1>
+  <div class="container d-flex justify-content-center">
+    <div class="glass-card-white w-75 mt-3 p-4">
+      <h1 class="drink-name"><i class="fas fa-cocktail"></i> Your drink: <strong><%= @cocktail.name %></strong></h1>
       <ul>
         <% @cocktail.doses.each do |dose| %>
           <li>
@@ -43,8 +43,10 @@
           </li>
         <% end %>
       </ul>
-      <p><%= link_to 'Back to Cocktails', cocktails_path, class: 'btn btn-outline-secondary'  %></p>
-      <p><%= link_to 'Add a dose to your drink', new_cocktail_dose_path(@cocktail)  %></p>
+        <div class="d-flex align-content-center">
+          <p><%= link_to 'Back to Cocktails', cocktails_path, class: 'btn btn-outline-secondary mr-3'  %></p>
+          <p><%= link_to 'Add a dose', new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %></p>
+        </div>
     </div>
   </div>
 </body>
