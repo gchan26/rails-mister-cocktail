@@ -198,7 +198,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(https://external-preview.redd.it/HEvfZd4nw9klrp11A9CdJZEIsw3oTQTPHqLerR9m27w.jpg?auto=webp&s=e18968e50b4a696bb17fe9fe55dc3bc1ed799ee0);
   background-size: cover;
   background-position: center;
-  padding: 220px 0;
+  padding: 0px 0 280px 0;
 }
 
 .cocktail-name-label {
@@ -209,6 +209,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 50px;
+  margin-top: 10%;
 }
 
 .cocktail-name-card {
@@ -255,4 +256,25 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .see-all-links {
 margin-left: 235px;
 
+}
+
+// Show page
+.show-body {
+  background: #3494E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.glass-card-white {
+  margin-top: 15% !important;
+  background: rgba( 255, 255, 255, 0.55 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7.0px );
+  -webkit-backdrop-filter: blur( 7.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+h1.drink-name {
+  font-weight: 600;
 }
