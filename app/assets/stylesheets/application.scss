@@ -222,7 +222,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .create-btn {
-  background-color: rgb(159, 52, 192);
+  background-color: #cf35d1;
   color: white;
   border-radius: 25px;
   border: none;
@@ -231,7 +231,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 	   -moz-box-shadow: 0 8px 6px -6px #252525;
 	        box-shadow: 0 8px 6px -6px #252525;
   &:hover {
-    background-color: rgb(129, 40, 156);
+    background-color: #972899;
   }
 }
 
@@ -246,11 +246,12 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .create-button {
-  background-color: #ee3ef1;
+  background-color: #ee3ef1 !important;
 }
 
 .create-button:hover {
   background-color: #a92bac;
+  color: white im !important;
 }
 
 .see-all-links {
