@@ -61,15 +61,23 @@
 
 .home-body {
   background-color: $main-blue;
-  color: #FFFFFF;
+  color: $main-gray;
+}
+
+.menu-title {
+  margin: 2em 105px 0px;
+  font-family: "Poppins", sans-serif;
+  color: $main-pink;
+  font-weight: 600;
 }
 
 .cocktail-list-card {
-  background: rgba( 227, 212, 227, 0.20 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 7.0px );
--webkit-backdrop-filter: blur( 7.0px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background: $dark-pink;
+  margin: 0 105px 3em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur( 7.0px );
+  -webkit-backdrop-filter: blur( 7.0px );
+  border-radius: 1em;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 // ------ //

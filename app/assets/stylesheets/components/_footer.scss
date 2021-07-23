@@ -1,0 +1,14 @@
+.footer {
+  background-color: $main-pink;
+  padding: 4em;
+}
+
+.logo-name {
+  display: flex;
+  h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-top: 0.4em;
+    margin-left: 0.8em;
+  }
+}
