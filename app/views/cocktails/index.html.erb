@@ -19,21 +19,24 @@
           </li>
         </ul>
       </div>
-      <a id="menu" class="header__menu d-xs d-xs-block">
+      <%# <a id="menu" class="header__menu d-xs d-xs-block">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
         </svg>
-      </a>
+      </a> %>
     </nav>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
   <div class="banner">
-    <h1 class="title">Swim in your dreams</h1>
+    <h1 class="title">Mr. Cocktail</h1>
     <h5 class="subtitle">Let creativity drive you to create and share Cocktail ideas</h5>
-    <p class="main-btn-div"><%= link_to "Create a Cocktail", new_cocktail_path, class: "main-btn btn btn-primary btn-lg mt-4" %></p>
-    <%= image_tag("drink_neon_by_hanjorafael.png", class:"neon-drink-img") %>
+    <p class="main-btn-div"><%= link_to new_cocktail_path, class: "main-btn btn btn-primary btn-lg mt-4" do %>
+      <i class="fa fa-plus-circle" aria-hidden="true"></i> Create a Cocktail
+    <% end %>
+    </p>
+    <%= image_tag("https://res.cloudinary.com/dd7bkl8rd/image/upload/v1627056816/cocktails5_1_qshaaa.png", class:"drink-img") %>
   </div>
   <body class="home-body">
     <div class="container">
