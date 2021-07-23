@@ -9,8 +9,11 @@
 @import "font-awesome";
 
 // Your CSS partials
+@import "components/colors";
 @import "components/index";
+@import "components/navbar";
 @import "pages/index";
+@import "pages/home";
 
 // Breakpoints // Smaller Screens
 @media only screen and (min-width: 0) and (max-width: 600px) {
@@ -75,121 +78,7 @@
 
 
 
-//---HOME PAGE---//
-// Home Page Navbar
 
-.navbar-lewagon .navbar-brand img {
-  width: 115px;
-}
-
-.logo {
-  height: 80px;
-}
-
-.navbar {
-  background-color: rgb(16, 6, 20);
-  height: 80px;
-  padding: 0px;
-}
-
-#navbarNav {
-  color: #FFFFFF;
-}
-
-.nav-item {
-  color: white;
-}
-
-a.nav-link {
-  color: white !important;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-// Home Page Banner
-h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-}
-
-.title {
-  margin-left: 25px;
-  font-size: 4em;
-  margin-bottom: 20px;
-}
-
-.subtitle {
-  margin-left: 30px;
-  margin-top: 25px;
-  margin-bottom: 20px;
-  font-size: 30px;
-}
-
-.neon-drink-img {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  height: 80%;
-  padding-bottom: 5%;
-  padding-left: 5%;
-}
-
-.banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(https://freight.cargo.site/t/original/i/81f2323225fbf49d97c08dbdae5c0fc0d274420fb01010c3269b7745969b9ddf/MOOD-RING-wallpaper-2x1-02.jpg);
-  background-size: cover;
-  background-position: center;
-  padding: 250px 0;
-}
-
-.main-btn {
-  background-color: #0db3f4;
-  margin-left: 30px;
-  border-radius: 25px;
-  padding: 0.8em;
-  box-shadow: 5px 10px 18px #252525;
-  color: #FFFFFF !important;
-  outline: 0;
-  position: relative;
-  display: inline-block;
-  padding: 10px 40px;
-  font-size: 20px;
-  overflow: hidden;
-  cursor: pointer;
-  // border: 2px solid #FFFF00;
-  // background: #FFFF00;
-  color: #000;
-  font-weight: 600;
-  transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
-}
-
-.main-btn:hover {
-  margin-left: 30px;
-  border-radius: 25px;
-  background-color: #0d71f4;
-  color: #000;
-  box-shadow: 0 0 5px #0d71f4,
-}
-
-// Home Page Body
-
-.home-body {
-  background: -webkit-linear-gradient(to right top, #6b2cf5, #d450e6); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right top, #6b2cf5, #d450e6);
-  color: #FFFFFF;
-}
-
-.cocktail-list-card {
-  background: rgba( 227, 212, 227, 0.20 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 7.0px );
--webkit-backdrop-filter: blur( 7.0px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-// ------ //
 
 // --- New Cocktail Page === //
 
