@@ -28,12 +28,12 @@ end
 puts 'Ingredients list done!'
 
 
-puts 'Creating good cocktails...'
+# puts 'Creating good cocktails...'
 
-20.times do 
-  cocktail = Cocktail.create(
-    name: Faker::Games::Zelda.item
-  )
-end
+# 20.times do 
+#   cocktail = Cocktail.create(
+#     name: Faker::Games::Zelda.item
+#   )
+# end
 
-puts 'Cocktails created!'
+# puts 'Cocktails created!'

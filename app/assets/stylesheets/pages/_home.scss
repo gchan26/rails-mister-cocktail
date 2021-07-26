@@ -1,1 +1,98 @@
-// Specific CSS for your home-page
+// Banner
+
+.title {
+  font-family: $poppins;
+  font-weight: 600;
+  margin-left: 50px;
+  font-size: 4em;
+  margin-bottom: 40px;
+}
+
+.subtitle {
+  margin-left: 50px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  font-family: $poppins;
+  font-weight: 500;
+}
+
+.drink-img {
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+}
+
+.see-menu {
+  margin-left: auto;
+  margin-right: auto;
+  width: 180px;
+  height: 35px;
+  background: $main-pink;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 160px 160px;
+  
+  h3{
+    font-family: $poppins;
+    font-style: normal; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.banner {
+  background: $main-gradient;
+  box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 50px 50px;
+  background-size: cover;
+  background-position: center;
+  padding: 160px 26px;
+}
+
+.main-btn {
+  font-family: $poppins;
+  background-color: $light-blue;
+  margin-left: 50px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: $main-gray;
+  position: relative;
+  font-weight: 600;
+  padding: 15px 50px;
+  font-size: 22px;
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  &:hover {
+    background-color: $dark-blue;
+  }
+}
+
+//  Body
+
+.home-body {
+  background-color: $main-blue;
+  color: $main-gray;
+}
+
+.menu-title {
+  margin: 2em 105px 0px;
+  font-family: $poppins;
+  color: $main-pink;
+  font-weight: 600;
+}
+
+.cocktail-list-card {
+  background: $dark-pink;
+  margin: 0 105px 3em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur( 7.0px );
+  -webkit-backdrop-filter: blur( 7.0px );
+  border-radius: 1em;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+// ------ //

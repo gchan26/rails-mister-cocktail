@@ -1,61 +1,24 @@
-  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <%= link_to "#", class: "navbar-brand" do %>
-        <div><%= image_tag "http://cdn.lowgif.com/full/097e4f3269373310-.gif", class: 'logo'%></div>
-      <% end %>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav justify-text-center ml-3">
-          <li class="nav-item active">
-            <a class="nav-link mr-3" href="/cocktails#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-3" href="/cocktails#">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-3" href="/cocktails/new">Create</a>
-          </li>
-        </ul>
-      </div>
-      <a id="menu" class="header__menu d-xs d-xs-block">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-        </svg>
-      </a>
-    </nav>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
-  <div class="banner">
-    <h1 class="title">Swim in your dreams</h1>
-    <h5 class="subtitle">Let creativity drive you to create and share Cocktail ideas</h5>
-    <p class="main-btn-div"><%= link_to "Create a Cocktail", new_cocktail_path, class: "main-btn btn btn-primary btn-lg mt-4" %></p>
-    <%= image_tag("drink_neon_by_hanjorafael.png", class:"neon-drink-img") %>
-  </div>
-  <body class="home-body">
-    <div class="container">
-        <h1 class="mt-4"><i class="fas fa-cocktail"></i> Our Cocktails:</h1>
-      <div class="cocktail-list-card mt-3 p-4">
-        <ul>
-          <% @cocktails.each do |cocktail| %>
-            <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-          <% end %>
-        </ul>
-      </div>
-    </body>
-    <div class="footer mt-5">
-      <div class="footer-links">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
-      <div class="footer-copyright">
-        This footer is made with <i class="fas fa-heart"></i> at Le Wagon
-      </div>
+<%= render "shared/navbar" %>
+<div class="banner">
+  <h1 class="title">Mr. Cocktail</h1>
+  <h5 class="subtitle">Let creativity drive you to create and share Cocktail ideas</h5>
+  <p class="main-btn-div"><%= link_to new_cocktail_path, class: "main-btn btn btn-primary btn-lg mt-4" do %>
+      <i class="fa fa-plus-circle" aria-hidden="true"></i> Create a Cocktail
+    <% end %>
+  </p>
+  <%= image_tag("https://res.cloudinary.com/dd7bkl8rd/image/upload/v1627056816/cocktails5_1_qshaaa.png", class:"drink-img") %>
+</div>
+<div class="see-menu">
+  <h3>See Menu <i class="fa fa-arrow-down" aria-hidden="true"></i></h3>
+</div>
+<body class="home-body">
+  <h1 class="menu-title"><i class="fas fa-cocktail"></i> Menu</h1>
+  <div class="cocktail-list-card mt-3 mb-3 p-4">
+    <%# <% @cocktails.each do |cocktail| %> %>
+      <%# <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %> %>
+      <%# <% end %> %>
     </div>
-  </div>
+  </body>
+  <%= render "shared/footer" %>
+</div>
+</div>

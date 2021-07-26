@@ -1,35 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light">
-      <%= link_to "#", class: "navbar-brand" do %>
-        <div><%= image_tag "http://cdn.lowgif.com/full/097e4f3269373310-.gif", class: 'logo'%></div>
-      <% end %>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav justify-text-center ml-3">
-          <li class="nav-item active">
-            <a class="nav-link mr-3" href="/cocktails#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-3" href="/cocktails#">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-3" href="/cocktails/new">Create</a>
-          </li>
-        </ul>
-      </div>
-      <a id="menu" class="header__menu d-xs d-xs-block">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-        </svg>
-      </a>
-    </nav>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
-
-
+<%= render "shared/navbar" %>
 <body class="new-cocktail-body">
   <div class="container">
     <h1 class="create-title">Create a Cocktail</h1>
@@ -37,7 +6,7 @@
       <%= simple_form_for(@cocktail) do |f| %>
         <div class="cocktail-name-label">
           <p><%= f.input :name, label: "Cocktail Name" %></p>
-          <%= f.input :photos,  as: :file,  input_html: { multiple: true },  label: "Select Photos" %>
+          <%= f.input :photo,  as: :file  %>
         </div>
         <div class="buttons-new text-right">
           <%= link_to 'Back', cocktails_path(@cocktail), class: "back-btn btn btn-outline-primary" %>
@@ -47,3 +16,4 @@
     </div>
   </div>
 </body>
+<%= render "shared/footer" %>

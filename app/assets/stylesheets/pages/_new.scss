@@ -1,0 +1,65 @@
+// --- New Cocktail Page === //
+
+// Page Body
+.new-cocktail-body {
+  height: 95vh;
+  background: url(https://res.cloudinary.com/dd7bkl8rd/image/upload/v1627336367/new-show-background_dzkjn0.png);
+  background-size: cover;
+  background-position: center;
+  padding: 0px 0 280px 0;
+}
+
+.cocktail-name-label {
+  color: $main-gray;
+}
+.create-title {
+  font-family: $poppins;
+  font-weight: 600;
+  color: $main-gray;
+  font-size: 50px;
+  margin-top: 10%;
+}
+
+.cocktail-name-card {
+  font-family: $poppins;
+  margin-bottom: 15%;
+  background: rgba( 178, 123, 178, 0.30 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7.0px );
+  -webkit-backdrop-filter: blur( 7.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.create-btn {
+  font-weight: 500;
+  width: 10em;
+  font-family: $poppins;
+  background-color: $main-pink;
+  color: $main-gray;
+  border-radius: 25px;
+  border: none;
+  padding: 0.8em;
+  -webkit-box-shadow: 0 8px 6px -6px #252525;
+	   -moz-box-shadow: 0 8px 6px -6px #252525;
+	        box-shadow: 0 8px 6px -6px #252525;
+  &:hover {
+    background-color: $darker-pink;
+  }
+}
+
+.back-btn {
+  font-weight: 500;
+  background-color: $main-gray;
+  color: $dark-pink;
+  border-style: none;
+  font-family: $poppins;
+  border-radius: 25px;
+  padding: 0.8em 1.1em;
+  margin-right: 1%;
+  &:hover {
+    background-color: $dark-gray;
+    color: $main-pink;
+  }
+}
+
