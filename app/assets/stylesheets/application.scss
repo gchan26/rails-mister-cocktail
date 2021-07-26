@@ -18,6 +18,7 @@
 @import "pages/index";
 @import "pages/home";
 @import "pages/new";
+@import "pages/show";
 
 // Breakpoints // Smaller Screens
 @media only screen and (min-width: 0) and (max-width: 600px) {
@@ -80,32 +81,3 @@
   }
 }
 
-// Show page
-.show-body {
-  background: #3494E6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.glass-card-white {
-  margin-top: 2% !important;
-  background: rgba( 255, 255, 255, 0.55 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 7.0px );
-  -webkit-backdrop-filter: blur( 7.0px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-h1.drink-name {
-  font-weight: 600;
-  text-align: center;
-}
-
-.drink-image {
-  max-width: 500px;
-  display: flex;
-  justify-content: center;
-  border: 2px solid #dadada;
-    border-radius: 7px;
-}

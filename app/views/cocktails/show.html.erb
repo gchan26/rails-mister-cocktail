@@ -14,9 +14,11 @@
         <% end %>
       </ul>
         <div class="d-flex justify-content-center">
-          <p><%= link_to 'Back to Cocktails', cocktails_path, class: 'btn btn-outline-secondary mr-3'  %></p>
-          <p><%= link_to 'Add a dose', new_cocktail_dose_path(@cocktail), class: 'btn btn-primary' %></p>
+          <p><%= link_to 'Back to Cocktails', cocktails_path, class: 'btn btn-outline-secondary back-btn mr-3'  %></p>
+          <p><%= link_to 'Add a dose', new_cocktail_dose_path(@cocktail), class: 'btn btn-primary create-btn' %></p>
         </div>
     </div>
   </div>
 </body>
+
+<%= render "shared/footer" %>
