@@ -19,11 +19,6 @@
           </li>
         </ul>
       </div>
-      <%# <a id="menu" class="header__menu d-xs d-xs-block">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-        </svg>
-      </a> %>
     </nav>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -38,6 +33,7 @@
     </p>
     <%= image_tag("https://res.cloudinary.com/dd7bkl8rd/image/upload/v1627056816/cocktails5_1_qshaaa.png", class:"drink-img") %>
   </div>
+  <div class="see-menu"><h3>See Menu <i class="fa fa-arrow-down" aria-hidden="true"></i></h3></div>
   <body class="home-body">
         <h1 class="menu-title"><i class="fas fa-cocktail"></i> Menu</h1>
       <div class="cocktail-list-card mt-3 mb-3 p-4">
@@ -48,20 +44,34 @@
         </ul>
       </div>
     </body>
-    <div class="footer mt-5">
-      <div class="logo-name">
-        <div><%= image_tag "https://res.cloudinary.com/dd7bkl8rd/image/upload/v1627056775/Icon_ox3tvb.png" %></div>
-        <h1>Mr.Cocktail</h1>
-      </div>
-      <div class="footer-links">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
-      <div class="footer-copyright">
-        This footer is made with <i class="fas fa-heart"></i> at Le Wagon
-      </div>
+       <div class="footer">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>Mr. Cocktail</h3>
+                        <p>Mr. Cocktail is a Ruby on Rails project created during the 9 week coding bootcamp Le Wagon. In this website you can create your own cocktails and see cocktails created by other users. </p>
+                    </div>
+                </div>
+                <p class="copyright">Mr.Cocktail © 2021</p>
+            </div>
+        </footer>
+    </div>
     </div>
   </div>
