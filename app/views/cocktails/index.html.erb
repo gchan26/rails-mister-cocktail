@@ -1,77 +1,24 @@
-  <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <%= link_to "#", class: "navbar-brand" do %>
-        <div><%= image_tag "https://res.cloudinary.com/dd7bkl8rd/image/upload/v1627056775/Icon_ox3tvb.png", class: 'logo'%></div>
-      <% end %>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav justify-text-center ml-3">
-          <li class="nav-item active">
-            <a class="nav-link mr-3" href="/cocktails#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-3" href="/cocktails#">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-3" href="/cocktails/new">Create</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
-  <div class="banner">
-    <h1 class="title">Mr. Cocktail</h1>
-    <h5 class="subtitle">Let creativity drive you to create and share Cocktail ideas</h5>
-    <p class="main-btn-div"><%= link_to new_cocktail_path, class: "main-btn btn btn-primary btn-lg mt-4" do %>
+<%= render "shared/navbar" %>
+<div class="banner">
+  <h1 class="title">Mr. Cocktail</h1>
+  <h5 class="subtitle">Let creativity drive you to create and share Cocktail ideas</h5>
+  <p class="main-btn-div"><%= link_to new_cocktail_path, class: "main-btn btn btn-primary btn-lg mt-4" do %>
       <i class="fa fa-plus-circle" aria-hidden="true"></i> Create a Cocktail
     <% end %>
-    </p>
-    <%= image_tag("https://res.cloudinary.com/dd7bkl8rd/image/upload/v1627056816/cocktails5_1_qshaaa.png", class:"drink-img") %>
-  </div>
-  <div class="see-menu"><h3>See Menu <i class="fa fa-arrow-down" aria-hidden="true"></i></h3></div>
-  <body class="home-body">
-        <h1 class="menu-title"><i class="fas fa-cocktail"></i> Menu</h1>
-      <div class="cocktail-list-card mt-3 mb-3 p-4">
-        <ul>
-          <% @cocktails.each do |cocktail| %>
-            <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-          <% end %>
-        </ul>
-      </div>
-    </body>
-       <div class="footer">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="#">Web design</a></li>
-                            <li><a href="#">Development</a></li>
-                            <li><a href="#">Hosting</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-md-3 item">
-                        <h3>About</h3>
-                        <ul>
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 item text">
-                        <h3>Mr. Cocktail</h3>
-                        <p>Mr. Cocktail is a Ruby on Rails project created during the 9 week coding bootcamp Le Wagon. In this website you can create your own cocktails and see cocktails created by other users. </p>
-                    </div>
-                </div>
-                <p class="copyright">Mr.Cocktail © 2021</p>
-            </div>
-        </footer>
+  </p>
+  <%= image_tag("https://res.cloudinary.com/dd7bkl8rd/image/upload/v1627056816/cocktails5_1_qshaaa.png", class:"drink-img") %>
+</div>
+<div class="see-menu">
+  <h3>See Menu <i class="fa fa-arrow-down" aria-hidden="true"></i></h3>
+</div>
+<body class="home-body">
+  <h1 class="menu-title"><i class="fas fa-cocktail"></i> Menu</h1>
+  <div class="cocktail-list-card mt-3 mb-3 p-4">
+    <%# <% @cocktails.each do |cocktail| %> %>
+      <%# <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %> %>
+      <%# <% end %> %>
     </div>
-    </div>
-  </div>
+  </body>
+  <%= render "shared/footer" %>
+</div>
+</div>

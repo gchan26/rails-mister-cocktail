@@ -1,9 +1,7 @@
-// Specific CSS for your home-page
-
 // Banner
 
 .title {
-  font-family: "Poppins", sans-serif;
+  font-family: $poppins;
   font-weight: 600;
   margin-left: 50px;
   font-size: 4em;
@@ -15,7 +13,7 @@
   margin-top: 25px;
   margin-bottom: 20px;
   font-size: 1.8em;
-  font-family: "Poppins", sans-serif;
+  font-family: $poppins;
   font-weight: 500;
 }
 
@@ -37,7 +35,7 @@
   border-radius: 0px 0px 160px 160px;
   
   h3{
-    font-family: "Poppins", sans-serif;
+    font-family: $poppins;
     font-style: normal; 
     font-weight: 500;
     font-size: 16px;
@@ -56,7 +54,7 @@
 }
 
 .main-btn {
-  font-family: "Poppins", sans-serif;
+  font-family: $poppins;
   background-color: $light-blue;
   margin-left: 50px;
   border-radius: 25px;
@@ -83,7 +81,7 @@
 
 .menu-title {
   margin: 2em 105px 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: $poppins;
   color: $main-pink;
   font-weight: 600;
 }

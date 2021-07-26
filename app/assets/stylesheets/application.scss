@@ -9,12 +9,15 @@
 @import "font-awesome";
 
 // Your CSS partials
+@import "components/fonts";
 @import "components/colors";
 @import "components/index";
 @import "components/navbar";
 @import "components/footer";
+// Pages
 @import "pages/index";
 @import "pages/home";
+@import "pages/new";
 
 // Breakpoints // Smaller Screens
 @media only screen and (min-width: 0) and (max-width: 600px) {
@@ -75,78 +78,6 @@
   .main-btn {
     padding: 1em !important;
   }
-}
-
-
-
-
-
-// --- New Cocktail Page === //
-
-// Page Body
-.new-cocktail-body {
-  background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(https://external-preview.redd.it/HEvfZd4nw9klrp11A9CdJZEIsw3oTQTPHqLerR9m27w.jpg?auto=webp&s=e18968e50b4a696bb17fe9fe55dc3bc1ed799ee0);
-  background-size: cover;
-  background-position: center;
-  padding: 0px 0 280px 0;
-}
-
-.cocktail-name-label {
-  color: white;
-}
-
-.create-title {
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  font-size: 50px;
-  margin-top: 10%;
-}
-
-.cocktail-name-card {
-  background: rgba( 178, 123, 178, 0.30 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 7.0px );
-  -webkit-backdrop-filter: blur( 7.0px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
-.create-btn {
-  background-color: #cf35d1;
-  color: white;
-  border-radius: 25px;
-  border: none;
-  padding: 0.8em;
-  -webkit-box-shadow: 0 8px 6px -6px #252525;
-	   -moz-box-shadow: 0 8px 6px -6px #252525;
-	        box-shadow: 0 8px 6px -6px #252525;
-  &:hover {
-    background-color: #972899;
-  }
-}
-
-.back-btn {
-  border-radius: 25px;
-  padding-top: 0.8em;
-  padding-bottom: 0.8em;
-  padding-left: 1.1em;
-  padding-right: 1.1em;
-  margin-right: 1%;
-
-}
-
-.create-button {
-  background-color: #ee3ef1 !important;
-}
-
-.create-button:hover {
-  background-color: #a92bac;
-  color: white im !important;
-}
-
-.see-all-links {
-margin-left: 235px;
-
 }
 
 // Show page
