@@ -1,5 +1,4 @@
 // Banner
-
 .title {
   font-family: $poppins;
   font-weight: 600;
@@ -94,5 +93,20 @@
   -webkit-backdrop-filter: blur( 7.0px );
   border-radius: 1em;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.card {
+  padding: 10% 10% 5% 10%;
+  background-color: $main-gray;
+  border-radius: 7px;
+}
+
+.card-title {
+  font-family: $poppins;
+  color: $main-blue;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
 }
 // ------ //
