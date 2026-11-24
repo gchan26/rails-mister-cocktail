@@ -6,6 +6,7 @@
       <%= simple_form_for(@cocktail) do |f| %>
         <div class="cocktail-name-label">
           <p><%= f.input :name, label: "Cocktail Name" %></p>
+          <p><%= f.input :country, label: "Country" %></p>
           <%= f.input :photo,  as: :file  %>
         </div>
         <div class="buttons-new text-right">
